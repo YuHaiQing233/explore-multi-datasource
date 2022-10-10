@@ -1,0 +1,23 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    druid:
+      master:
+        username: root
+        password: root@123
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/explore-security-01?useUnicode=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
+      slave:
+        username: root
+        password: root@123
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/explore-security-02?useUnicode=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
+      initial-size: 5
+      min-idle: 10
+      max-active: 30
+      db-type: com.alibaba.druid.pool.DruidDataSource
+
