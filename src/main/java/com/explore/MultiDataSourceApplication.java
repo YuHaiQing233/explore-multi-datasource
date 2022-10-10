@@ -12,10 +12,10 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * @Date 2022/10/8 11:38
  */
 @SpringBootApplication(exclude = {MybatisPlusAutoConfiguration.class, DataSourceAutoConfiguration.class})
-public class SecurityApplication {
+public class MultiDataSourceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SecurityApplication.class, args);
+        SpringApplication.run(MultiDataSourceApplication.class, args);
     }
 
 }
